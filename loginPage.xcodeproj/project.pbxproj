@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A08D9FA28B1164400A022D2 /* CatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A08D9F928B1164400A022D2 /* CatCell.swift */; };
+		1A09DF8C28AD00310000B60A /* CatCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A09DF8B28AD00310000B60A /* CatCollection.swift */; };
 		1A15FEFB289A88FD00A87729 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15FEFA289A88FD00A87729 /* constants.swift */; };
+		1A1735A928A5344100C7C650 /* collectinrefrenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1735A828A5344100C7C650 /* collectinrefrenses.swift */; };
 		1A17A1B92896475100DAB919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1B82896475100DAB919 /* AppDelegate.swift */; };
 		1A17A1BB2896475100DAB919 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1BA2896475100DAB919 /* SceneDelegate.swift */; };
 		1A17A1BD2896475100DAB919 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1BC2896475100DAB919 /* ViewController.swift */; };
@@ -16,15 +19,18 @@
 		1A17A1C52896475E00DAB919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A17A1C32896475E00DAB919 /* LaunchScreen.storyboard */; };
 		1A17A1CE2896479600DAB919 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1CD2896479600DAB919 /* loginViewController.swift */; };
 		1A17A1D1289647A900DAB919 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1D0289647A900DAB919 /* signupViewController.swift */; };
-		1A17A1D4289647B400DAB919 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1D3289647B400DAB919 /* homeViewController.swift */; };
 		1A17A1DA289667B400DAB919 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1D9289667B400DAB919 /* Utilities.swift */; };
 		1A17A1DF2896736300DAB919 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A17A1DE2896736300DAB919 /* GoogleService-Info.plist */; };
+		1AA50A8D28A3DEEC007744F9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA50A8C28A3DEEC007744F9 /* File.swift */; };
 		F6F80F0DC10BE0C8F2F491B7 /* Pods_loginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F929F35D1006A22769EAF99 /* Pods_loginPage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		18B9ED823FB88DD1684AFB3D /* Pods-loginPage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginPage.debug.xcconfig"; path = "Target Support Files/Pods-loginPage/Pods-loginPage.debug.xcconfig"; sourceTree = "<group>"; };
+		1A08D9F928B1164400A022D2 /* CatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCell.swift; sourceTree = "<group>"; };
+		1A09DF8B28AD00310000B60A /* CatCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatCollection.swift; sourceTree = "<group>"; };
 		1A15FEFA289A88FD00A87729 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		1A1735A828A5344100C7C650 /* collectinrefrenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectinrefrenses.swift; sourceTree = "<group>"; };
 		1A17A1B52896475100DAB919 /* loginPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = loginPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A17A1B82896475100DAB919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A17A1BA2896475100DAB919 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,9 +41,9 @@
 		1A17A1C62896475E00DAB919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A17A1CD2896479600DAB919 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		1A17A1D0289647A900DAB919 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
-		1A17A1D3289647B400DAB919 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		1A17A1D9289667B400DAB919 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1A17A1DE2896736300DAB919 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1AA50A8C28A3DEEC007744F9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		590FD59B14944C31C2C4ACDD /* Pods-loginPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginPage.release.xcconfig"; path = "Target Support Files/Pods-loginPage/Pods-loginPage.release.xcconfig"; sourceTree = "<group>"; };
 		5F929F35D1006A22769EAF99 /* Pods_loginPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -54,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A06B96728A244B800D3B5E7 /* homePage */ = {
+			isa = PBXGroup;
+			children = (
+				1A09DF8B28AD00310000B60A /* CatCollection.swift */,
+				1A08D9F928B1164400A022D2 /* CatCell.swift */,
+			);
+			path = homePage;
+			sourceTree = "<group>";
+		};
 		1A17A1AC2896475100DAB919 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +90,7 @@
 		1A17A1B72896475100DAB919 /* loginPage */ = {
 			isa = PBXGroup;
 			children = (
+				1AA50A8B28A3DED7007744F9 /* model */,
 				1A17A1DC289667DC00DAB919 /* Helpers */,
 				1A17A1D6289647BE00DAB919 /* viewcontrollers */,
 				1A17A1B82896475100DAB919 /* AppDelegate.swift */,
@@ -91,8 +107,8 @@
 		1A17A1D6289647BE00DAB919 /* viewcontrollers */ = {
 			isa = PBXGroup;
 			children = (
+				1A06B96728A244B800D3B5E7 /* homePage */,
 				1A17A1D0289647A900DAB919 /* signupViewController.swift */,
-				1A17A1D3289647B400DAB919 /* homeViewController.swift */,
 				1A17A1CD2896479600DAB919 /* loginViewController.swift */,
 				1A17A1BC2896475100DAB919 /* ViewController.swift */,
 			);
@@ -102,10 +118,19 @@
 		1A17A1DC289667DC00DAB919 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				1A1735A828A5344100C7C650 /* collectinrefrenses.swift */,
 				1A15FEFA289A88FD00A87729 /* constants.swift */,
 				1A17A1D9289667B400DAB919 /* Utilities.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1AA50A8B28A3DED7007744F9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1AA50A8C28A3DEEC007744F9 /* File.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		343524A2E8AD295BD27EA1BD /* Frameworks */ = {
@@ -241,12 +266,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A17A1CE2896479600DAB919 /* loginViewController.swift in Sources */,
-				1A17A1D4289647B400DAB919 /* homeViewController.swift in Sources */,
 				1A17A1DA289667B400DAB919 /* Utilities.swift in Sources */,
 				1A17A1BD2896475100DAB919 /* ViewController.swift in Sources */,
 				1A17A1D1289647A900DAB919 /* signupViewController.swift in Sources */,
+				1A09DF8C28AD00310000B60A /* CatCollection.swift in Sources */,
 				1A17A1B92896475100DAB919 /* AppDelegate.swift in Sources */,
+				1A08D9FA28B1164400A022D2 /* CatCell.swift in Sources */,
 				1A17A1BB2896475100DAB919 /* SceneDelegate.swift in Sources */,
+				1A1735A928A5344100C7C650 /* collectinrefrenses.swift in Sources */,
+				1AA50A8D28A3DEEC007744F9 /* File.swift in Sources */,
 				1A15FEFB289A88FD00A87729 /* constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,7 +421,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18B9ED823FB88DD1684AFB3D /* Pods-loginPage.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = clothes;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = loginPage/Info.plist;
@@ -412,7 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 590FD59B14944C31C2C4ACDD /* Pods-loginPage.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = clothes;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = loginPage/Info.plist;
