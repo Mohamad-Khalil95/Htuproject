@@ -21,6 +21,7 @@ class CatCollection: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         loadcat()
         
         collectionView.dataSource=self
@@ -48,6 +49,8 @@ class CatCollection: UICollectionViewController {
         return 0
     }*/
 
+    
+   
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
@@ -66,13 +69,25 @@ class CatCollection: UICollectionViewController {
     
         return cell
     }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "categoriesSegue", sender:categories[indexPath.row])
+    }
     
-    
-    
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         
+        if segue.identifier == "categoriesSegue" {
+            
+            let vc = segue.destination as! ListOfProduct
+            
+            vc.trancat=sender as! category
+            
+        }
+    }
     func loadcat()  {
         downloadCatfromFirebase { (allcat) in
             
-            print("there is \(allcat.count)")
+           
             self.categories=allcat
             self.collectionView.reloadData()
             

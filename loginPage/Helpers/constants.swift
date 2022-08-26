@@ -21,8 +21,23 @@ struct constants {
     public let fimage_path = "Category"
     public let fobject_path = "Item"
     public let fbasket_path = "Basket"
+
      
+
+
+
     
+   //Items
+
+    public let IName = "Itemname"
+    public let IID = "ItemID"
+
+   public let CID = "catId"
+   
+    public let IDesc = "Description"
+    public let IPrice = "Price"
+    public let imigelink = "imageLink"
     
+
     
 

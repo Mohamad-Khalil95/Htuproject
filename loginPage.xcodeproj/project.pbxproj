@@ -21,6 +21,11 @@
 		1A17A1D1289647A900DAB919 /* signupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1D0289647A900DAB919 /* signupViewController.swift */; };
 		1A17A1DA289667B400DAB919 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17A1D9289667B400DAB919 /* Utilities.swift */; };
 		1A17A1DF2896736300DAB919 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A17A1DE2896736300DAB919 /* GoogleService-Info.plist */; };
+		1A19D8C328B7CB0E004A938D /* ItemsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A19D8C228B7CB0E004A938D /* ItemsModel.swift */; };
+		1A1DABC128B409D100E4497A /* AddToBasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DABC028B409D100E4497A /* AddToBasketViewController.swift */; };
+		1A1DABC528B4100C00E4497A /* ListOfProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DABC428B4100C00E4497A /* ListOfProduct.swift */; };
+		1A332E2128B97449004AAF1E /* itemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A332E2028B97449004AAF1E /* itemsCell.swift */; };
+		1A332E2828B9894E004AAF1E /* apifile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A332E2728B9894E004AAF1E /* apifile.swift */; };
 		1AA50A8D28A3DEEC007744F9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA50A8C28A3DEEC007744F9 /* File.swift */; };
 		F6F80F0DC10BE0C8F2F491B7 /* Pods_loginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F929F35D1006A22769EAF99 /* Pods_loginPage.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +48,11 @@
 		1A17A1D0289647A900DAB919 /* signupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signupViewController.swift; sourceTree = "<group>"; };
 		1A17A1D9289667B400DAB919 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1A17A1DE2896736300DAB919 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A19D8C228B7CB0E004A938D /* ItemsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsModel.swift; sourceTree = "<group>"; };
+		1A1DABC028B409D100E4497A /* AddToBasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToBasketViewController.swift; sourceTree = "<group>"; };
+		1A1DABC428B4100C00E4497A /* ListOfProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProduct.swift; sourceTree = "<group>"; };
+		1A332E2028B97449004AAF1E /* itemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsCell.swift; sourceTree = "<group>"; };
+		1A332E2728B9894E004AAF1E /* apifile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apifile.swift; sourceTree = "<group>"; };
 		1AA50A8C28A3DEEC007744F9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		590FD59B14944C31C2C4ACDD /* Pods-loginPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginPage.release.xcconfig"; path = "Target Support Files/Pods-loginPage/Pods-loginPage.release.xcconfig"; sourceTree = "<group>"; };
 		5F929F35D1006A22769EAF99 /* Pods_loginPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +119,10 @@
 			children = (
 				1A06B96728A244B800D3B5E7 /* homePage */,
 				1A17A1D0289647A900DAB919 /* signupViewController.swift */,
+				1A1DABC028B409D100E4497A /* AddToBasketViewController.swift */,
 				1A17A1CD2896479600DAB919 /* loginViewController.swift */,
 				1A17A1BC2896475100DAB919 /* ViewController.swift */,
+				1A1DABBF28B4099200E4497A /* items */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -125,10 +137,21 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1A1DABBF28B4099200E4497A /* items */ = {
+			isa = PBXGroup;
+			children = (
+				1A1DABC428B4100C00E4497A /* ListOfProduct.swift */,
+				1A332E2028B97449004AAF1E /* itemsCell.swift */,
+			);
+			path = items;
+			sourceTree = "<group>";
+		};
 		1AA50A8B28A3DED7007744F9 /* model */ = {
 			isa = PBXGroup;
 			children = (
 				1AA50A8C28A3DEEC007744F9 /* File.swift */,
+				1A19D8C228B7CB0E004A938D /* ItemsModel.swift */,
+				1A332E2728B9894E004AAF1E /* apifile.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -267,6 +290,7 @@
 			files = (
 				1A17A1CE2896479600DAB919 /* loginViewController.swift in Sources */,
 				1A17A1DA289667B400DAB919 /* Utilities.swift in Sources */,
+				1A332E2828B9894E004AAF1E /* apifile.swift in Sources */,
 				1A17A1BD2896475100DAB919 /* ViewController.swift in Sources */,
 				1A17A1D1289647A900DAB919 /* signupViewController.swift in Sources */,
 				1A09DF8C28AD00310000B60A /* CatCollection.swift in Sources */,
@@ -274,6 +298,10 @@
 				1A08D9FA28B1164400A022D2 /* CatCell.swift in Sources */,
 				1A17A1BB2896475100DAB919 /* SceneDelegate.swift in Sources */,
 				1A1735A928A5344100C7C650 /* collectinrefrenses.swift in Sources */,
+				1A332E2128B97449004AAF1E /* itemsCell.swift in Sources */,
+				1A1DABC528B4100C00E4497A /* ListOfProduct.swift in Sources */,
+				1A19D8C328B7CB0E004A938D /* ItemsModel.swift in Sources */,
+				1A1DABC128B409D100E4497A /* AddToBasketViewController.swift in Sources */,
 				1AA50A8D28A3DEEC007744F9 /* File.swift in Sources */,
 				1A15FEFB289A88FD00A87729 /* constants.swift in Sources */,
 			);
@@ -421,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18B9ED823FB88DD1684AFB3D /* Pods-loginPage.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = clothes;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = loginPage/Info.plist;
@@ -440,7 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 590FD59B14944C31C2C4ACDD /* Pods-loginPage.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = clothes;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = loginPage/Info.plist;

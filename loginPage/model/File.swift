@@ -53,7 +53,7 @@ class category {
                    
                     
                 }
-                print(" helllllllllo\(categoryarr)")
+          
                 
                 
             }
@@ -85,17 +85,20 @@ func categorydictionary(_ category:category ) -> NSDictionary {
 
 
 //create category
-func createCatageory() {
-    let clothes = category("clothes", "cloth")
-    let electronics = category("electronics", "elec")
-    let toys = category("Toys", "toys")
-
-    let arrOfcategory = [clothes,electronics,toys]
-    
-    
-    for category  in arrOfcategory {
-        saveTOFirebase(category)
-    }
-    
-}
+//func createCatageory() {
+//   // let clothes = category("clothes", "cloth")
+//    //let electronics = category("electronics", "elec")
+//    //let toys = category("Toys", "toys")
+//    let thirts = category("shirt", "shirts")
+//
+//
+//
+//    let arrOfcategory = [thirts]
+//
+//
+//    for category  in arrOfcategory {
+//        saveTOFirebase(category)
+//    }
+//
+//}
 
