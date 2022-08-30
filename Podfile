@@ -9,5 +9,5 @@ target 'loginPage' do
     pod 'FirebaseAnalytics'
     pod 'FirebaseAuth'
     pod 'FirebaseFirestore'
-    
+    pod 'Alamofire'
 end

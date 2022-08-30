@@ -13,23 +13,21 @@ import FirebaseFirestore
 class ListOfProduct: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     var Item:[Items]=[]
-    
+    @IBOutlet weak var listOfItems: UITableView!
+
     
     
     var trancat :category?
     override func viewDidLoad() {
         super.viewDidLoad()
-        callAPI()
+      //  callAPI()
 //
-//        listOfItems.dataSource=self
-//        listOfItems.delegate=self
+        listOfItems.dataSource=self
+        listOfItems.delegate=self
 //
-//        navitem.title=trancat!.name
-//        print("the number of items iside \(Item.count)")
-//
-//        loaditems()
+    loaditems()
 
-        //print("number of items\(Item.count)")
+        print("number of items\(Item.count)")
         
         //createitem()
         
@@ -67,7 +65,7 @@ class ListOfProduct: UIViewController,UITableViewDelegate,UITableViewDataSource 
     }
     */
     func createitem() {
-        let tshirts=Items("thirt", trancat!.id, "ssdsad", "dsadasad", "ssadafd")
+        let tshirts=Items("elec", trancat!.id, "ldl", "dsadasad", "ssadafd")
     
     
     
@@ -87,7 +85,7 @@ class ListOfProduct: UIViewController,UITableViewDelegate,UITableViewDataSource 
    
     
    
-    @IBOutlet weak var listOfItems: UITableView!
+
     
 
     func loaditems()  {
@@ -97,10 +95,11 @@ class ListOfProduct: UIViewController,UITableViewDelegate,UITableViewDataSource 
             print("number of items\(allitems.count)")
             print("the number of items iside \(self.Item.count)")
             
-            self.listOfItems.reloadData()
+           
         }
+        self.listOfItems.reloadData()
     }
-
+   
     
     
     

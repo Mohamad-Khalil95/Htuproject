@@ -26,6 +26,8 @@
 		1A1DABC528B4100C00E4497A /* ListOfProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1DABC428B4100C00E4497A /* ListOfProduct.swift */; };
 		1A332E2128B97449004AAF1E /* itemsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A332E2028B97449004AAF1E /* itemsCell.swift */; };
 		1A332E2828B9894E004AAF1E /* apifile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A332E2728B9894E004AAF1E /* apifile.swift */; };
+		1A332E2C28BBB0C5004AAF1E /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A332E2B28BBB0C5004AAF1E /* tabBar.swift */; };
+		1A332E2F28BBB889004AAF1E /* ProfileCntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A332E2E28BBB888004AAF1E /* ProfileCntroller.swift */; };
 		1AA50A8D28A3DEEC007744F9 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA50A8C28A3DEEC007744F9 /* File.swift */; };
 		F6F80F0DC10BE0C8F2F491B7 /* Pods_loginPage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F929F35D1006A22769EAF99 /* Pods_loginPage.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +55,8 @@
 		1A1DABC428B4100C00E4497A /* ListOfProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfProduct.swift; sourceTree = "<group>"; };
 		1A332E2028B97449004AAF1E /* itemsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemsCell.swift; sourceTree = "<group>"; };
 		1A332E2728B9894E004AAF1E /* apifile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = apifile.swift; sourceTree = "<group>"; };
+		1A332E2B28BBB0C5004AAF1E /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		1A332E2E28BBB888004AAF1E /* ProfileCntroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCntroller.swift; sourceTree = "<group>"; };
 		1AA50A8C28A3DEEC007744F9 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		590FD59B14944C31C2C4ACDD /* Pods-loginPage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginPage.release.xcconfig"; path = "Target Support Files/Pods-loginPage/Pods-loginPage.release.xcconfig"; sourceTree = "<group>"; };
 		5F929F35D1006A22769EAF99 /* Pods_loginPage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loginPage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,8 @@
 				1A17A1CD2896479600DAB919 /* loginViewController.swift */,
 				1A17A1BC2896475100DAB919 /* ViewController.swift */,
 				1A1DABBF28B4099200E4497A /* items */,
+				1A332E2B28BBB0C5004AAF1E /* tabBar.swift */,
+				1A332E2E28BBB888004AAF1E /* ProfileCntroller.swift */,
 			);
 			path = viewcontrollers;
 			sourceTree = "<group>";
@@ -292,6 +298,8 @@
 				1A17A1DA289667B400DAB919 /* Utilities.swift in Sources */,
 				1A332E2828B9894E004AAF1E /* apifile.swift in Sources */,
 				1A17A1BD2896475100DAB919 /* ViewController.swift in Sources */,
+				1A332E2C28BBB0C5004AAF1E /* tabBar.swift in Sources */,
+				1A332E2F28BBB889004AAF1E /* ProfileCntroller.swift in Sources */,
 				1A17A1D1289647A900DAB919 /* signupViewController.swift in Sources */,
 				1A09DF8C28AD00310000B60A /* CatCollection.swift in Sources */,
 				1A17A1B92896475100DAB919 /* AppDelegate.swift in Sources */,

@@ -97,7 +97,7 @@ class signupViewController: UIViewController {
                 }
                 else {
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["FirstName":firsName,"LastName":lastName,"Uid":result!.user.uid]) { (error2) in
+                    db.collection("users").addDocument(data: ["FirstName":firsName,"LastName":lastName,"Email":email,"Uid":result!.user.uid]) { (error2) in
                         if error2 != nil{
                             
                             self.showerrors(messsage: "error creat data")
@@ -117,7 +117,7 @@ class signupViewController: UIViewController {
     
     func transitionToHome(){
         
-        let homeViewController = storyboard?.instantiateViewController(identifier: constants.storyboard.homeviewcontroller) as? CatCollection
+        let homeViewController = storyboard?.instantiateViewController(identifier: constants.storyboard.homeviewcontroller) as? ProfileCntroller
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
         

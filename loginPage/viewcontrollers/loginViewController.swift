@@ -9,6 +9,8 @@ import UIKit
 import FirebaseAuth
 
 
+
+
 class loginViewController: UIViewController {
 
     @IBOutlet weak var Email: UITextField!
@@ -28,7 +30,10 @@ class loginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         elementstyle()
+        
+        
     }
     func elementstyle() {
         Errorlabel.alpha=0
@@ -73,7 +78,7 @@ class loginViewController: UIViewController {
     
         func transitionToHome(){
             
-            let homeViewController = storyboard?.instantiateViewController(identifier: constants.storyboard.homeviewcontroller) as? CatCollection
+            let homeViewController = storyboard?.instantiateViewController(identifier: constants.storyboard.homeviewcontroller) as? ProfileCntroller
             view.window?.rootViewController = homeViewController
             view.window?.makeKeyAndVisible()
             
