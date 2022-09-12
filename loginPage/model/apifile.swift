@@ -6,19 +6,17 @@
 //
 
 import Foundation
-func callAPI(){
-    guard let url = URL(string: "https://fakestoreapi.com/products") else{
-        return
-    }
+import SwiftyJSON
 
-
-    let task = URLSession.shared.dataTask(with: url){
-        data, response, error in
-        
-        if let data = data, let string = String(data: data, encoding: .utf8){
-            print(string)
-        }
-    }
-
-    task.resume()
+import Alamofire
+func getAPICall(Item:String) {
+Alamofire.request("https://fakestoreapi.com/products/category/\(Item)").responseJSON { response in
+//print(response.request)
+print(response.result)
+if let json = response.result.value {
+print(json)
 }
+}
+}
+
+

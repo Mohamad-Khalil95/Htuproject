@@ -37,6 +37,27 @@ class ProfileCntroller: UIViewController {
         UserEmail.text=userUID
     }
 
-  
+    @IBAction func SIgnOut(_ sender: Any) {
+        
+        try! Auth.auth().signOut()
+
+        signout()
+ 
+
+    
+      
+        
+         
+}
+    
+    func signout(){
+        
+        let loginVC = storyboard?.instantiateViewController(identifier: "navigoter") as? NavController
+        view.window?.rootViewController = loginVC
+        view.window?.makeKeyAndVisible()
+        
+    }
+
+
     
 }

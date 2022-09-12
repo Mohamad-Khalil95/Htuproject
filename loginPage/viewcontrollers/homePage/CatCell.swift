@@ -17,4 +17,7 @@ class CatCell: UICollectionViewCell {
         CatLabel.text=category.name
     }
  
+    @IBAction func cartbtn(_ sender: UIButton) {
+    }
+    
 }

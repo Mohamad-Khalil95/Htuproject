@@ -6,6 +6,11 @@
 //
 
 import UIKit
+//
+//protocol CartDelegate {
+//    func updateCart(cell: itemsCell)
+//}
+
 
 class itemsCell: UITableViewCell {
 
@@ -24,23 +29,30 @@ class itemsCell: UITableViewCell {
     
     @IBOutlet weak var ItemName: UILabel!
     
-    @IBOutlet weak var ItemDesc: UILabel!
-    
     @IBOutlet weak var ItemPrice: UILabel!
     
     
     func setdata(_ items : Items)  {
-        CellImage.image=items.Itemimage
-        
-        ItemName.text=items.Itemname
-        ItemDesc.text=items.Itemdesc
-        ItemPrice.text=items.Itemdesc
-    }
-   
     
+        ItemName.text=items.title
+       
+        ItemPrice.text="\(items.price)$"
+        
+        
+        let url = URL(string: items.image)!
+
+            // Fetch Image Data
+            if let data = try? Data(contentsOf: url) {
+                // Create Image and Update Image View
+                CellImage.image = UIImage(data: data)
+            }
+        
+    }
+ 
+   }
  
 
 
     
     
-}
+

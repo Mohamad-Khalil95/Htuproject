@@ -30,6 +30,8 @@ class loginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        Email.text="mohamad.khalil@gmail.com"
+        Password.text="mohamadK*123"
         
         elementstyle()
         
@@ -72,13 +74,12 @@ class loginViewController: UIViewController {
         
        
         
-        
-        
+      
    
     
         func transitionToHome(){
             
-            let homeViewController = storyboard?.instantiateViewController(identifier: constants.storyboard.homeviewcontroller) as? ProfileCntroller
+            let homeViewController = storyboard?.instantiateViewController(identifier: constants.storyboard.homeviewcontroller) as? tabBar
             view.window?.rootViewController = homeViewController
             view.window?.makeKeyAndVisible()
             
